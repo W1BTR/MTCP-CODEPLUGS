@@ -1,5 +1,6 @@
 # Import Into Kenwood KPG-D1N
 - [Import Into Kenwood KPG-D1N](#import-into-kenwood-kpg-d1n)
+      - [This codeplug currently has an issue where some VHF zones that should be in analog systems are in Digital / P25 systems](#this-codeplug-currently-has-an-issue-where-some-vhf-zones-that-should-be-in-analog-systems-are-in-digital--p25-systems)
     - [Method 1: Start with .dat file](#method-1-start-with-dat-file)
     - [Method 2: Copy and Paste from .dat file](#method-2-copy-and-paste-from-dat-file)
     - [Method 3 (Preferred): Copy and Paste Tables Below:](#method-3-preferred-copy-and-paste-tables-below)
@@ -16,7 +17,13 @@
         - [BRK-HMP-WMLC-D14](#brk-hmp-wmlc-d14)
         - [MEMA](#mema)
 - [UHF](#uhf)
+        - [UHF NON FED INTEROP (UTAC) ANALOG](#uhf-non-fed-interop-utac-analog)
+        - [UHF FED INC RESP (FED IR U) ANALOG](#uhf-fed-inc-resp-fed-ir-u-analog)
 
+
+
+#### This codeplug currently has an issue where some VHF zones that should be in analog systems are in Digital / P25 systems
+This means that some zones need to be set as P25 / Digital even though they only have analog channels, before pasting them in. This should eventually be fixed.
 
 ### Method 1: Start with .dat file
 Using the included MTCP .dat files, begin with this codeplug containing nothing but the MTCP channels and build from there. Great for single-band setups, or to start a multi-band setup.
@@ -27,9 +34,15 @@ You can also open more than one KPG-D1N instance and copy channels over
 ### Method 3 (Preferred): Copy and Paste Tables Below:
 Note that these may be more out of date than the codeplugs. If you have any issues, please report them on the issues page!
 
-Copy one of the below chunks, and paste it into a KPG-D1N Zone (If youre wondering how to make a zone, go in to edit an existing zone, and click "New" in the top left)
+1. Create a KPG-D1N Codeplug for your radio
+2. After creating the zones you'd like for your municipality, **create a new zone** for each of the below required zones that are within the TX/RX range of your radio (If youre wondering how to make a zone, go in to edit an existing zone, and click "New" in the top left).
+3. Make sure to **set the system** to an analog one for chunks with <sup>ANALOG</sup> marked on them, and P25 Conventional for chunks labeled <sup>P25</sup> (this is done in `PERSONAL -> SYSTEM -> SYSTEM INFORMATION`)
+4. **Copy the chunk** of code for the zone, select one fo the cells in KPG-D1N, and **paste** it.
+5. Rinse and repeat!
+
 
 # VHF
+**NOTE: THE SYSTEM MUST BE SET TO P25 CONVENTIONAL IN PERSONAL -> SYSTEM -> SYSTEM INFORMATION FOR PASTING TO WORK FOR ALL VHF CHUNKS AT THE MOMENT**
 ##### VTAC
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
@@ -224,3 +237,44 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 154.175	159.06	P25	P25	High	65535	65535	1542	354	Narrow	BPD MEDIC	True	0	255	Common	255
 ```
 # UHF
+
+##### UHF NON FED INTEROP (UTAC) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+453.2125	458.2125	Analog	High	1567	1567	Narrow	UCALL 40	True	0	255	Common	255
+453.2125	453.2125	Analog	High	1567	1567	Narrow	UCALL 40 D	True	0	255	Common	255
+453.4625	458.4625	Analog	High	1567	1567	Narrow	UTAC 41	True	0	255	Common	255
+453.4625	453.4625	Analog	High	1567	1567	Narrow	UTAC 41 D	True	0	255	Common	255
+453.7125	458.7125	Analog	High	1567	1567	Narrow	UTAC 42	True	0	255	Common	255
+453.7125	453.7125	Analog	High	1567	1567	Narrow	UTAC 42 D	True	0	255	Common	255
+453.8625	458.8625	Analog	High	1567	1567	Narrow	UTAC 43	True	0	255	Common	255
+453.8625	453.8625	Analog	High	1567	1567	Narrow	UTAC 43 D	True	0	255	Common	255
+```
+##### UHF FED INC RESP (FED IR U) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+410.2375	419.2375	Analog	High	65535	1679	Narrow	NC 2	True	0	255	Common	255
+410.4375	419.475	Analog	High	65535	1679	Narrow	IR 10	True	0	255	Common	255
+410.6375	419.6375	Analog	High	65535	1679	Narrow	IR 11	True	0	255	Common	255
+410.8375	419.8375	Analog	High	65535	1679	Narrow	IR 12	True	0	255	Common	255
+413.1875	413.1875	Analog	High	65535	1679	Narrow	IR 13	True	0	255	Common	255
+413.2125	413.2125	Analog	High	65535	1679	Narrow	IR 14	True	0	255	Common	255
+410.2375	410.2375	Analog	High	65535	1679	Narrow	IR 15	True	0	255	Common	255
+410.4375	410.4375	Analog	High	65535	1679	Narrow	IR 16	True	0	255	Common	255
+410.6375	410.6375	Analog	High	65535	1679	Narrow	IR 17	True	0	255	Common	255
+410.8375	410.8375	Analog	High	65535	1679	Narrow	IR 18	True	0	255	Common	255
+```
+##### UHF FED LAW (FED LE U) <SUP>P25</SUP>
+```
+ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
+414.0375	414.0375	Analog	Analog	High	65535	1679	659	659	Narrow	LE B	True	0	255	Common	255
+409.9875	418.9875	Analog	Analog	High	65535	1679	659	659	Narrow	LE 10	True	0	255	Common	255
+410.1875	418.1875	P25	P25	High	65535	65535	1679	1679	Narrow	LE 11	True	0	255	Common	255
+410.6125	419.6125	P25	P25	High	65535	65535	1679	1679	Narrow	LE 12	True	0	255	Common	255
+414.0625	414.0625	P25	P25	High	65535	65535	1679	1679	Narrow	LE 13	True	0	255	Common	255
+414.3125	414.3125	P25	P25	High	65535	65535	1679	1679	Narrow	LE 14	True	0	255	Common	255
+414.3375	414.3375	P25	P25	High	65535	65535	1679	1679	Narrow	LE 15	True	0	255	Common	255
+409.9875	409.9875	Analog	Analog	High	65535	1679	659	659	Narrow	LE 16	True	0	255	Common	255
+410.1875	410.1875	P25	P25	High	65535	65535	1679	1679	Narrow	LE 17	True	0	255	Common	255
+410.6125	410.6125	P25	P25	High	65535	65535	1679	1679	Narrow	LE 18	True	0	255	Common	255
+```
