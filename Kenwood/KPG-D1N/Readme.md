@@ -42,8 +42,8 @@ Note that these may be more out of date than the codeplugs. If you have any issu
 
 
 # VHF
-**NOTE: THE SYSTEM MUST BE SET TO P25 CONVENTIONAL IN PERSONAL -> SYSTEM -> SYSTEM INFORMATION FOR PASTING TO WORK FOR ALL VHF CHUNKS AT THE MOMENT**
-##### VTAC
+**NOTE: THE SYSTEM MUST BE SET TO P25 CONVENTIONAL IN PERSONAL -> SYSTEM -> SYSTEM INFORMATION FOR PASTING TO WORK FOR ALL VHF CHUNKS AT THE MOMENT**. THIS WILL BE FIXED AT THE EARLIEST CONVENIENCE.
+##### VTAC <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 155.7525	155.7525	Analog	Analog	High	1567	1567	659	659	Narrow	VCALL 10	True	0	255	Common	255
@@ -58,7 +58,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 154.4525	158.7375	Analog	Analog	High	1567	1365	659	659	Narrow	VTAC 37	True	0	255	Common	255
 158.7375	159.4725	Analog	Analog	High	1567	1365	659	659	Narrow	VTAC 38	True	0	255	Common	255
 ```
-##### VHF PSC
+##### VHF PSC <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 154.28	154.28	Analog	Analog	High	1567	1567	659	659	Narrow	VFIRE21	True	0	255	Common	255
@@ -73,7 +73,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 155.3475	155.3475	Analog	Analog	High	1567	1567	659	659	Narrow	VMED29	True	0	255	Common	255
 155.16	155.16	Analog	Analog	High	65535	65535	659	659	Narrow	VSAR16	True	0	255	Common	255
 ```
-##### VHF FED INC RESP
+##### VHF FED INC RESP <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 169.5375	164.7125	Analog	Analog	High	65535	1679	659	659	Narrow	NC 1	True	0	255	Common	255
@@ -87,8 +87,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 170.6875	170.6875	Analog	Analog	High	65535	1679	659	659	Narrow	IR 8	True	0	255	Common	255
 173.0375	173.0375	Analog	Analog	High	65535	1679	659	659	Narrow	IR 9	True	0	255	Common	255
 ```
-##### VHF Fed Law
-<sup>*Requires P25</sup>
+##### VHF Fed Law <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 167.0875	167.0875	Analog	Analog	High	65535	1679	659	659	Narrow	LE A	True	0	255	Common	255
@@ -102,8 +101,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 168.1125	168.1125	P25	P25	High	65535	65535	1679	1679	Narrow	LE 8	False	0	255	Common	255
 168.4625	168.4625	P25	P25	High	65535	65535	1679	1679	Narrow	LE 9	False	0	255	Common	255
 ```
-##### VHF FIRE DIST
-<sup>*Requires P25</sup>
+##### VHF FIRE DIST <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 155.7225	158.94	P25	P25	High	65535	65535	553	1424	Narrow	DUK FD-TAC	True	0	255	Common	255
@@ -123,7 +121,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 159.4575	151.2725	Analog	Analog	High	915	915	659	659	Narrow	D7 ORANGE	False	0	255	Common	255
 154.265	154.265	Analog	Analog	High	744	744	659	659	Narrow	D7 RED	True	0	255	Common	255
 ```
-##### MARINE 1007-1083
+##### MARINE 1007-1083 <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 156.35	156.35	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 1007	True	0	255	Common	255
@@ -143,7 +141,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 157.125	157.125	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 1082	False	0	255	Common	255
 157.175	157.175	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 1083	True	0	255	Common	255
 ```
-##### MARINE 6-28
+##### MARINE 6-28 <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 156.3	156.3	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 6	True	0	255	Common	255
@@ -163,7 +161,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 157.35	157.35	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 27	False	0	255	Common	255
 157.4	157.4	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 28	True	0	255	Common	255
 ```
-##### MARINE 67-88
+##### MARINE 67-88 <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 156.375	156.375	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 67	True	0	255	Common	255
@@ -181,7 +179,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 157.375	157.375	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 87	True	0	255	Common	255
 157.425	157.425	Analog	Analog	High	65535	65535	659	659	Narrow	MARINE CH 88	True	0	255	Common	255
 ```
-##### DCR VHF
+##### DCR VHF <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 151.145	151.415	Analog	Analog	High	719	1109	659	659	Narrow	DCR ANDOVER	True	0	255	Common	255
@@ -200,7 +198,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 151.145	151.415	Analog	Analog	High	719	719	659	659	Narrow	DCR WACHUSETT	True	0	255	Common	255
 159.285	159.285	Analog	Analog	High	65535	65535	659	659	Narrow	FIRE COMPACT	True	0	255	Common	255
 ```
-##### BRK-HMP-WMLC-D14
+##### BRK-HMP-WMLC-D14 <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 155.475	155.475	Analog	Analog	High	1738	1738	659	659	Narrow	WM SIM-1 VHF	True	0	255	Common	255
@@ -219,8 +217,7 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 154.74	159	Analog	Analog	High	10506	10515	659	659	Narrow	PD CMD RPTR	True	0	255	Common	255
 159.045	159.045	Analog	Analog	High	10316	10316	659	659	Narrow	14 SILVER	True	0	255	Common	255
 ```
-##### MEMA
-<sup>*Requires P25</sup>
+##### MEMA <SUP>P25</SUP>
 ```
 ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
 151.2575	154.785	Analog	Analog	High	10505	10533	659	659	Narrow	R1 AMESBURY	True	0	255	Common	255
@@ -277,4 +274,111 @@ ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	
 409.9875	409.9875	Analog	Analog	High	65535	1679	659	659	Narrow	LE 16	True	0	255	Common	255
 410.1875	410.1875	P25	P25	High	65535	65535	1679	1679	Narrow	LE 17	True	0	255	Common	255
 410.6125	410.6125	P25	P25	High	65535	65535	1679	1679	Narrow	LE 18	True	0	255	Common	255
+```
+##### BAPERN (BAPERN, BUT SMALLER) <SUP>P25</SUP>
+```
+ZoneChChTableP25ConventionalRxFrequency	ZoneChChTableP25ConventionalTxFrequency	ZoneChChTableP25ConventionalChannelType	ZoneChChTableP25ConventionalTxMode	ZoneChChTableP25ConventionalTxPower	ZoneChChTableP25ConventionalQtDqtDecode	ZoneChChTableP25ConventionalQtDqtEncode	ZoneChChTableP25ConventionalNacDecode	ZoneChChTableP25ConventionalNacEncode	ZoneChChTableP25ConventionalChannelSpacing	ZoneChChTableP25ConventionalChannelName	ZoneChChTableP25ConventionalScanAdd	ZoneChChTableP25ConventionalScanListNo	ZoneChChTableP25ConventionalEmergencyProfileNo	ZoneChChTableP25ConventionalKeyAssignment	ZoneChChTableP25ConventionalVoiceAnnouncement
+470.7875	470.7875	Analog	Analog	High	1318	10403	659	659	Narrow	AREAWIDE 3	True	0	255	Common	255
+470.5625	470.5625	Analog	Analog	High	1318	10404	659	659	Narrow	AREAWIDE 4	True	0	255	Common	255
+470.9875	470.9875	Analog	Analog	High	10668	10387	659	659	Narrow	BAP CENT DIST	True	0	255	Common	255
+470.0375	470.0375	P25	P25	High	65535	65535	1634	550	Narrow	BAP CENT TAC	True	0	255	Common	255
+470.4875	470.4875	Analog	Analog	High	1318	10405	659	659	Narrow	BAP NORTH DIST	True	0	255	Common	255
+482.9625	482.9625	P25	P25	High	65535	65535	1335	1335	Narrow	BAP NORTH TAC	True	0	255	Common	255
+482.6875	482.6875	Analog	Analog	High	1462	10419	659	659	Narrow	BAP NW DIST	True	0	255	Common	255
+482.6375	482.6375	P25	P25	High	65535	65535	1335	1335	Narrow	BAP NW TAC	True	0	255	Common	255
+482.8875	482.8875	Analog	Analog	High	2035	10421	659	659	Narrow	BAP SE DIST	True	0	255	Common	255
+483.0375	483.0375	P25	P25	High	65535	65535	1335	1335	Narrow	BAP SE TAC	True	0	255	Common	255
+470.9125	470.9125	Analog	Analog	High	1318	10409	659	659	Narrow	BAP SOUTH DIST	True	0	255	Common	255
+470.15	470.15	P25	P25	High	65535	65535	1575	370	Narrow	BAP SOUTH TAC	True	0	255	Common	255
+482.5125	482.5125	Analog	Analog	High	2035	2035	659	659	Narrow	BAP SW DIST	True	0	255	Common	255
+470.7375	470.7375	Analog	Analog	High	1318	10417	659	659	Narrow	BAP WEST DIST	True	0	255	Common	255
+470.075	470.075	P25	P25	High	65535	65535	152	100	Narrow	BAP WEST TAC	True	0	255	Common	255
+```
+##### BERKSHIRE UHF (BERK UHF) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+465.375	465.375	Analog	High	10549	10549	Narrow	Channel 1	True	0	255	Common	255
+465.625	465.625	Analog	High	10563	10563	Narrow	Channel 2	True	0	255	Common	255
+453.6125	458.6125	Analog	High	10586	10586	Narrow	Channel 3	True	0	255	Common	255
+460.0625	465.0625	Analog	High	10613	10613	Narrow	Channel 4	True	0	255	Common	255
+460.575	465.575	Analog	High	10630	10630	Narrow	Channel 5	True	0	255	Common	255
+453.65	458.65	Analog	High	10649	10649	Narrow	Channel 6	True	0	255	Common	255
+453.45	453.45	Analog	High	10329	10329	Narrow	Channel 7	True	0	255	Common	255
+458.4375	458.4375	Analog	High	10350	10350	Narrow	Channel 8	True	0	255	Common	255
+458.45	458.45	Analog	High	10362	10362	Narrow	Channel 9	True	0	255	Common	255
+460.0375	460.0375	Analog	High	10403	10403	Narrow	Channel 10	True	0	255	Common	255
+460.2	460.2	Analog	High	10438	10438	Narrow	Channel 11	True	0	255	Common	255
+460.375	460.375	Analog	High	10457	10457	Narrow	Channel 12	True	0	255	Common	255
+460.625	460.625	Analog	High	10484	10484	Narrow	Channel 13	True	0	255	Common	255
+465.0375	465.0375	Analog	High	10505	10505	Narrow	Channel 14	True	0	255	Common	255
+465.2	465.2	Analog	High	10521	10521	Narrow	Channel 15	True	0	255	Common	255
+460.3875	465.3875	Analog	High	1072	1072	Narrow	Channel 16	True	0	255	Common	255
+
+```
+##### WMLEC UHF (WMLEC U) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+453.1	458.1	Analog	High	2065	2065	Narrow	WM BORDEN 1	True	0	255	Common	255
+453.4125	458.4125	Analog	High	2065	2065	Narrow	WM BORDEN 2	True	0	255	Common	255
+453.15	458.15	Analog	High	2065	2065	Narrow	WM GRACE 1	True	0	255	Common	255
+453.6	458.6	Analog	High	2065	2065	Narrow	WM GRACE 2	True	0	255	Common	255
+453.475	458.475	Analog	High	2065	2065	Narrow	WM SHELBURNE 1	True	0	255	Common	255
+453.8	458.8	Analog	High	2065	2065	Narrow	WM SHELBURNE 2	True	0	255	Common	255
+460.25	465.25	Analog	High	2065	2065	Narrow	WM HOVEY 1	True	0	255	Common	255
+460.625	465.625	Analog	High	2065	2065	Narrow	WM HOVEY 2	True	0	255	Common	255
+453.9	458.9	Analog	High	2065	2065	Narrow	WM MT TOM 1	True	0	255	Common	255
+452.5875	457.5875	Analog	High	2065	2065	Narrow	WM MT TOM 2	True	0	255	Common	255
+460.225	465.225	Analog	High	2065	2065	Narrow	WM SIM 1A	True	0	255	Common	255
+460.475	465.475	Analog	High	2065	2065	Narrow	WM SIM 2A	True	0	255	Common	255
+```
+##### FD DIST 6-8-14 (FD6-8-14) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+486.6375	486.6375	Analog	High	10390	10390	Narrow	FD6 FG1 U	True	0	255	Common	255
+483.6375	483.6375	Analog	High	1567	1567	Narrow	FD6 FG2	True	0	255	Common	255
+484.3875	484.3875	Analog	High	10304	10304	Narrow	FD6 FG3	True	0	255	Common	255
+483.6375	486.6375	Analog	High	1567	1567	Narrow	FD6 ADMIN	True	0	255	Common	255
+460.0375	465.0375	Analog	High	1318	1318	Narrow	FD6 OPS	True	0	255	Common	255
+453.75	458.75	Analog	High	948	948	Narrow	FD8 SIMULCAST	True	0	255	Common	255
+453.9125	453.9125	Analog	High	1318	1318	Narrow	FD8 RED	True	0	255	Common	255
+458.9625	458.9625	Analog	High	1318	1318	Narrow	FD8 WHITE	True	0	255	Common	255
+453.9875	453.9875	Analog	High	1318	1318	Narrow	FD8 BLUE	True	0	255	Common	255
+453.5375	453.5375	Analog	High	1188	1188	Narrow	14 BLUE	True	0	255	Common	255
+460.1	465.1	Analog	High	744	744	Narrow	14 GOLD	True	0	255	Common	255
+453.3875	453.3875	Analog	High	10293	10293	Narrow	14 GREEN	True	0	255	Common	255
+453.5375	458.5375	Analog	High	10293	10293	Narrow	14 ORANGE	True	0	255	Common	255
+460.1	460.1	Analog	High	744	744	Narrow	14 RED	True	0	255	Common	255
+471.05	471.05	Analog	High	10362	10362	Narrow	14 WHITE	True	0	255	Common	255
+```
+##### METRO FIRE D13 (METRO 13) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+482.025	482.025	Analog	High	65535	65535	Narrow	CENTRAL DIRECT	True	0	255	Common	255
+482.025	485.025	Analog	High	65535	65535	Narrow	CENTRAL DIST	True	0	255	Common	255
+485.1875	485.1875	Analog	High	65535	65535	Narrow	CENTRAL FG	True	0	255	Common	255
+483.3125	485.1875	Analog	High	65535	65535	Narrow	METRO RED	True	0	255	Common	255
+482.25	482.25	Analog	High	65535	65535	Narrow	NORTH DIRECT	True	0	255	Common	255
+482.25	485.25	Analog	High	65535	65535	Narrow	NORTH DIST	True	0	255	Common	255
+482.1875	482.1875	Analog	High	65535	65535	Narrow	NORTH FG	True	0	255	Common	255
+470.1875	473.1875	Analog	High	65535	65535	Narrow	ORANGE	True	0	255	Common	255
+483.3125	486.3125	Analog	High	65535	65535	Narrow	RED	True	0	255	Common	255
+483.3125	483.3125	Analog	High	65535	65535	Narrow	RED DIR	True	0	255	Common	255
+470.1375	473.1375	Analog	High	65535	65535	Narrow	SILVER	True	0	255	Common	255
+482.2125	482.2125	Analog	High	65535	65535	Narrow	SOUTH DIRECT	True	0	255	Common	255
+482.2125	485.2125	Analog	High	65535	65535	Narrow	SOUTH DIST	True	0	255	Common	255
+485.1	485.1	Analog	High	65535	65535	Narrow	SOUTH FG	True	0	255	Common	255
+```
+##### MBHSR-MPA (MBHSRMPA) <SUP>ANALOG</SUP>
+```
+ZoneChChTableAnalogConventionalRxFrequency	ZoneChChTableAnalogConventionalTxFrequency	ZoneChChTableAnalogConventionalTxMode	ZoneChChTableAnalogConventionalTxPower	ZoneChChTableAnalogConventionalQtDqtDecode	ZoneChChTableAnalogConventionalQtDqtEncode	ZoneChChTableAnalogConventionalChannelSpacingAnalog	ZoneChChTableAnalogConventionalChannelName	ZoneChChTableAnalogConventionalScanAdd	ZoneChChTableAnalogConventionalScanListNo	ZoneChChTableAnalogConventionalEmergencyProfileNo	ZoneChChTableAnalogConventionalKeyAssignment	ZoneChChTableAnalogConventionalVoiceAnnouncement
+453.9	458.9	Analog	High	10373	10373	Narrow	MASSPORT UHF	True	0	255	Common	255
+453.9	458.9	Analog	High	10373	10373	Narrow	MPA-FD1 UHF	True	0	255	Common	255
+460.6375	465.6375	Analog	High	10485	10390	Narrow	MPA-FD5 UHF	True	0	255	Common	255
+470.0125	473.0125	Analog	High	1273	10674	Narrow	MBHSR	True	0	255	Common	255
+470.2	473.2	Analog	High	1035	1318	Narrow	REGIONAL RPT	True	0	255	Common	255
+470.2	470.2	Analog	High	1035	1035	Narrow	REGIONAL TAC 1	True	0	255	Common	255
+473.2	473.2	Analog	High	1072	1072	Narrow	REGIONAL TAC 2	True	0	255	Common	255
+453.1	458.1	Analog	High	10357	10357	Narrow	BAMA	True	0	255	Common	255
+462.9625	462.9625	Analog	High	885	885	Narrow	SOPS MED92 DIR	True	0	255	Common	255
+471.6875	474.6875	Analog	High	10630	10354	Narrow	MEMA TIE UHF	True	0	255	Common	255
 ```
